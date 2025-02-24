@@ -21,7 +21,7 @@ app.use('/api/todo',todoRoute);
 connectDB();
 //defaultroutes
 app.get('/',(req,res)=>{
-    send("Welcome to TODO app")
+    res.send("Welcome to TODO app")
 })
 
 app.listen(process.env.PORT,()=>{
